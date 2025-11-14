@@ -14,7 +14,7 @@ from selenium.common.exceptions import TimeoutException, JavascriptException
 from webdriver_manager.chrome import ChromeDriverManager
 service = ChromeService(ChromeDriverManager().install())
 
-URL = os.getenv("STREAM_URL", "https://pof.dk/video-(1).aspx")  # Link from environment variable or default
+URL = os.getenv("STREAM_URL")  # Link from environment variable or default
 OUT_DIR = Path("screenshots") # Folder where images will be stored
 SHOT_COUNT = 3
 ANGLE_INTERVAL_SEC = 30
